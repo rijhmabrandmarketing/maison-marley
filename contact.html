@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact / Booking | Maison Marley</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="brand">Maison Marley</div>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="contact.html" class="btn">Book</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Contact / Booking</h1>
+      <p>Share your date, guest count, and vision. We’ll confirm availability and craft a tailored proposal.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="mailto:weddings.marleydesigns@gmail.com">Email Us</a>
+        <a class="btn ghost" href="tel:+19143650526">Call</a>
+      </div>
+      <p class="mini">Newburgh, NY • By appointment</p>
+    </div>
+    <img class="hero-img" src="images/IMG_5636 2.jpg" alt="Maison Marley contact hero">
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container contact">
+    <div class="contact-box">
+      <h3>Request a Quote</h3>
+      <p class="mini">Include your date, guest count, event type, and any notes.</p>
+      <p><strong>Email:</strong> <a href="mailto:weddings.marleydesigns@gmail.com">weddings.marleydesigns@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+19143650526">914-365-0526</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/maisonmarley" target="_blank" rel="noopener">@maisonmarley</a></p>
+      <!-- Optional: link to your Google Form -->
+      <!-- <a class="btn" href="https://forms.gle/..." target="_blank">Inquiry Form</a> -->
+
+      <form class="form" name="inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="inquiry" />
+        <label class="visually-hidden">
+          <span>Do not fill out (spam check)</span>
+          <input type="text" name="bot-field" />
+        </label>
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="Name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="Email" required />
+          </label>
+          <label>
+            <span>Phone (optional)</span>
+            <input type="tel" name="Phone" />
+          </label>
+          <label>
+            <span>Event Type</span>
+            <select name="Event Type" required>
+              <option value="Wedding">Wedding</option>
+              <option value="Birthday">Birthday</option>
+              <option value="Shower">Shower</option>
+              <option value="Corporate">Corporate</option>
+              <option value="Private Dinner">Private Dinner</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label>
+            <span>Guest Count</span>
+            <input type="number" name="Guest Count" min="1" />
+          </label>
+          <label>
+            <span>Date</span>
+            <input type="date" name="Date" />
+          </label>
+        </div>
+        <label class="form-full">
+          <span>Message</span>
+          <textarea name="Message" rows="5" placeholder="Share details, ideas, and any requests..."></textarea>
+        </label>
+        <button class="btn" type="submit">Send Inquiry</button>
+        <p class="mini">Submissions are captured via Netlify Forms. We’ll follow up with availability, pricing, and next steps.</p>
+      </form>
+    </div>
+    <div class="contact-box">
+      <h3>Location</h3>
+      <p>Newburgh, NY</p>
+      <p class="mini">Hours vary by event. Booking by appointment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Online Inquiry Form</h2>
+    <p class="mini">Prefer a web form? Submit details below; we’ll reply by email.</p>
+    <div class="form-embed">
+      <!-- Replace the src with your actual Google Form embed URL -->
+      <iframe src="https://docs.google.com/forms/d/e/REPLACE_WITH_FORM_ID/viewform?embedded=true" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0" title="Maison Marley Inquiry Form">Loading…</iframe>
+    </div>
+    <p>
+      <a class="btn ghost" href="https://docs.google.com/forms/d/e/REPLACE_WITH_FORM_ID/viewform" target="_blank" rel="noopener">Open Form in New Tab</a>
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="brand">Maison Marley</div>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="contact.html" class="btn">Book</a>
+    </nav>
+  </div>
+  <div class="container">
+    <p class="mini">© 2025 Maison Marley · Newburgh, NY</p>
+  </div>
+</footer>
+
+</body>
+</html>
